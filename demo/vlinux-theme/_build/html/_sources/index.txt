@@ -13,7 +13,7 @@ was developed for the documentation of the VLinux_ project.
 
 How to use
 ----------
-#. Download `vlinux-theme-1.0.zip <http://www.github.com>`_ and uncompress the archive.
+#. Download `vlinux-theme-1.0.zip <http://www.github.com/vimalkumarvelayudhan/sphinx-themes/download/vlinux-theme-1.0.zip>`_ and uncompress the archive.
 #. Modify the ``conf.py`` of an existing Sphinx project or create a new 
    Sphinx project using ``sphinx-quickstart``.
 #. Change the ``html_theme`` parameter to ``vlinux-theme``.

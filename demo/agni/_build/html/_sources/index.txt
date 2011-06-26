@@ -12,7 +12,7 @@ Agni is a theme for the Python_ Sphinx_ documentation system.
 
 How to use
 ----------
-#. Download `agni-1.0.zip <http://www.github.com>`_ and uncompress the archive.
+#. Download `agni-1.0.zip <http://www.github.com/vimalkumarvelayudhan/sphinx-themes/download/agni-1.0.zip>`_ and uncompress the archive.
 #. Modify the ``conf.py`` of an existing Sphinx project or create a new 
    Sphinx project using ``sphinx-quickstart``.
 #. Change the ``html_theme`` parameter to ``agni``.
