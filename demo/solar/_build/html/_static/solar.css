@@ -26,6 +26,7 @@ body {
     -moz-box-shadow: 0px 0px 10px #93a1a1; 
     -webkit-box-shadow: 0px 0px 10px #93a1a1; 
     box-shadow: 0px 0px 10px #93a1a1; 
+    background: url("subtle_dots.png") repeat;
 
 }
 
@@ -150,9 +151,9 @@ div.body a:hover, div.sphinxsidebarwrapper a:hover {
     border-bottom: 1px solid #268bd2;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Open Sans Condensed";
-    font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 h1 {
@@ -160,6 +161,7 @@ h1 {
     padding: 0.7em 0 0.3em 0;
     line-height: 1.2em;
     color: #002b36;
+    text-shadow: #eee 0.1em 0.1em 0.1em;
 }
 
 h2 {
@@ -172,7 +174,10 @@ h2 {
 h3 {
     margin: 1em 0 -0.3em 0;
     padding-bottom: 5px;
-    color: #586e75;
+}
+
+h3, h4, h5, h6 {
+    color: #073642;
 }
 
 div.body h1 a, div.body h2 a, div.body h3 a, div.body h4 a, div.body h5 a, div.body h6 a {
