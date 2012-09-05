@@ -3,13 +3,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to Agni’s documentation! &mdash; Agni v1 documentation</title>
+    <title>Agni theme for Python Sphinx &mdash; Agni theme demo</title>
+    
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
@@ -22,7 +25,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Agni v1 documentation" href="#" /> 
+    <link rel="top" title="Agni theme demo" href="#" /> 
   </head>
   <body>
     <div class="related">
@@ -30,16 +33,21 @@
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li><a href="#">Agni v1 documentation</a> &raquo;</li> 
+             accesskey="I">index</a></li> 
+        <li><a href="http://vimalkumar.in/sphinx-themes">sphinx-themes</a> &raquo; </li> 
+    
+        <li><a href="#">Agni theme demo</a> &raquo;</li>
+ 
       </ul>
     </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to Agni&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#">Agni theme for Python Sphinx</a><ul>
 <li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#syntax-highlight">Syntax Highlight</a></li>
+<li><a class="reference internal" href="#others">Others</a></li>
 <li><a class="reference internal" href="#how-to-use">How to use</a></li>
 <li><a class="reference internal" href="#credits">Credits</a></li>
 </ul>
@@ -54,7 +62,7 @@
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -72,16 +80,67 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="welcome-to-agni-s-documentation">
-<h1>Welcome to Agni&#8217;s documentation!<a class="headerlink" href="#welcome-to-agni-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="agni-theme-for-python-sphinx">
+<h1>Agni theme for Python Sphinx<a class="headerlink" href="#agni-theme-for-python-sphinx" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="about">
 <h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
 <p>Agni is a theme for the <a class="reference external" href="http://www.python.org">Python</a> <a class="reference external" href="http://sphinx.pocoo.org/">Sphinx</a> documentation system.</p>
 </div>
+<div class="section" id="syntax-highlight">
+<h2>Syntax Highlight<a class="headerlink" href="#syntax-highlight" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Dlg</span><span class="p">(</span><span class="n">QDialog</span><span class="p">,</span> <span class="n">Ui_Dialog</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Dlg</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dockWidget</span><span class="o">.</span><span class="n">hide</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileLineEdit</span><span class="o">.</span><span class="n">setDisabled</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileButton</span><span class="o">.</span><span class="n">setDisabled</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">closeButton</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buildButton</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileButton</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getFile</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileRadioButton</span><span class="o">.</span><span class="n">toggled</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileLineEdit</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fileRadioButton</span><span class="o">.</span><span class="n">toggled</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fileButton</span><span class="o">.</span><span class="n">setEnabled</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logButton</span><span class="o">.</span><span class="n">toggled</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dockWidget</span><span class="o">.</span><span class="n">setVisible</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">button</span> <span class="ow">in</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sourceButton</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputButton</span><span class="p">):</span>
+            <span class="n">button</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sourceDirectory</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outputDirectory</span> <span class="o">=</span> <span class="bp">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span> <span class="o">=</span> <span class="n">QProcess</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="o">.</span><span class="n">readyReadStandardOutput</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">readOutput</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="o">.</span><span class="n">readyReadStandardError</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">readErrors</span><span class="p">)</span>
+
+        <span class="c">#restore settings</span>
+        <span class="n">settings</span> <span class="o">=</span> <span class="n">QSettings</span><span class="p">()</span>
+        <span class="n">size</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s">&#39;Dialog/Size&#39;</span><span class="p">,</span> <span class="n">QVariant</span><span class="p">(</span><span class="n">QSize</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">500</span><span class="p">)))</span><span class="o">.</span><span class="n">toSize</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s">&#39;Dialog/Position&#39;</span><span class="p">,</span> <span class="n">QVariant</span><span class="p">(</span><span class="n">QPoint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span><span class="o">.</span><span class="n">toPoint</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">widget</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">sourceLineEdit</span><span class="p">,</span> <span class="s">&#39;Data/SourceDirectory&#39;</span><span class="p">),</span>
+                              <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">outputLineEdit</span><span class="p">,</span> <span class="s">&#39;Data/OutputDirectory&#39;</span><span class="p">)):</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="n">setting</span><span class="p">)</span><span class="o">.</span><span class="n">toString</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="others">
+<h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Here is a note!</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">There can be warnings too!</p>
+</div>
+</div>
 <div class="section" id="how-to-use">
 <h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Download <a class="reference external" href="http://www.github.com/vimalkumarvelayudhan/sphinx-themes/download/agni-1.0.zip">agni-1.0.zip</a> and uncompress the archive.</li>
+<li>Download latest version from <a class="reference external" href="https://github.com/vkvn/sphinx-themes/downloads">https://github.com/vkvn/sphinx-themes/downloads</a> and uncompress the archive.</li>
 <li>Modify the <tt class="docutils literal"><span class="pre">conf.py</span></tt> of an existing Sphinx project or create a new
 Sphinx project using <tt class="docutils literal"><span class="pre">sphinx-quickstart</span></tt>.</li>
 <li>Change the <tt class="docutils literal"><span class="pre">html_theme</span></tt> parameter to <tt class="docutils literal"><span class="pre">agni</span></tt>.</li>
@@ -105,13 +164,16 @@ Sphinx project using <tt class="docutils literal"><span class="pre">sphinx-quick
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li><a href="#">Agni v1 documentation</a> &raquo;</li> 
+             >index</a></li> 
+        <li><a href="http://vimalkumar.in/sphinx-themes">sphinx-themes</a> &raquo; </li> 
+    
+        <li><a href="#">Agni theme demo</a> &raquo;</li>
+ 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2011, Vimalkumar Velayudhan.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>
