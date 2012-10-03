@@ -1,4 +1,4 @@
-.. VLinux theme documentation master file, created by
+.. Solar theme documentation master file, created by
    sphinx-quickstart on Sun Jun 26 13:50:50 2011.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -53,17 +53,58 @@ Syntax Highlight
                 widget.setText(settings.value(setting).toString())
 
 
-Others
-------
+Admonition levels
+-----------------
+
+Note
+....
 
 .. note::
     
-    Here is a note!
+    This is a note!
+
+Hint, Tip
+.........
+
+.. hint::
+
+   This can be a hint.
+  
+.. tip::
+
+   A tip looks similar to a hint.
+   
+Warning, Important
+.................. 
 
 .. warning::
 
     There can be warnings too!
 
+.. important::
+
+   This is important.
+   
+   
+Caution, Attention, Danger and Error
+....................................
+    
+.. attention::
+
+   Requires your attention.
+
+.. caution::
+
+   Requires caution.
+
+.. danger::
+
+   Danger isn't good.
+
+.. error::
+
+   Errors are bad.
+ 
 Todo
 ----
 * Fix print preview
