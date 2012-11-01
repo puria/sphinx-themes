@@ -1,13 +1,6 @@
 /* solar.css
- * 
- * Modified from sphinxdoc.css from 
- * sphinxdoc theme.  Originally created by
- * Armin Ronacher for Werkzeug.
- *
- * :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.
- * :license: BSD, see LICENSE for details.
- *
- */
+ * Modified from sphinxdoc.css of the sphinxdoc theme.
+*/
 
 @import url("basic.css");
 
@@ -16,7 +9,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    letter-spacing: -0.01em;
     line-height: 150%;
     text-align: center;
     color: #002b36;
@@ -182,10 +174,11 @@ h3 {
 
 h3, h4, h5, h6 {
     color: #073642;
+	border-bottom: 1px dotted #eee;
 }
 
 div.body h1 a, div.body h2 a, div.body h3 a, div.body h4 a, div.body h5 a, div.body h6 a {
-    color: black!important;
+    color: #657B83!important;
 }
 
 h1 a.anchor, h2 a.anchor, h3 a.anchor, h4 a.anchor, h5 a.anchor, h6 a.anchor {
@@ -221,7 +214,8 @@ a.headerlink:hover {
 
 
 cite, code, tt {
-    font-family: 'PT Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
+	font-size: 0.9em;
     letter-spacing: 0.01em;
     background-color: #eeeff2;
     font-style: normal;
@@ -239,11 +233,17 @@ hr {
 }
 
 pre {
-    font-family: 'PT Mono', monospace;
+    font-family: 'Source Code Pro', monospace;
     font-style: normal;
+	font-size: 0.9em;
     letter-spacing: 0.015em;
     line-height: 120%;
     padding: 0.7em;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 pre a {
